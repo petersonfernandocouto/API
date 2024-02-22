@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API</title>
+</head>
+<body>
+
+    <script>
+       fetch("https://swapi.dev/api/people/4/")
+       .then(function(response){
+
+            return response.json()
+       })
+
+       .then(function(data){
+        console.log(data)
+         console.log(data.name)
+         console.log(data.birth_year)
+
+       })
+
+    </script>
+    
+</body>
+</html>
